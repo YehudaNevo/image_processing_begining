@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread('gray.png',0)
+img = cv2.imread('photo/tiger.jpeg',0)
 # hist_val = cv2.calcHist([img],channels=[0],mask=None,histSize=[256],ranges=[0,256])
 
 # plt.plot(hist_val)
@@ -47,4 +47,4 @@ def norm_img(img):
     plt.imshow(img_arr, cmap='gray')
     plt.show()
 
-norm_img()
+norm_img(img)
